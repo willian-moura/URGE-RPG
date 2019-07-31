@@ -423,28 +423,28 @@ public class JanelaEscudo extends javax.swing.JFrame {
         add_jogadoresButton.setText("Adicionar");
         add_jogadoresButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adicionarJogador(evt);
+                adicionarJogadorJanela(evt);
             }
         });
 
         rem_jogadoresButton.setText("Remover");
         rem_jogadoresButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                removerJogador(evt);
+                removerJogadorButton(evt);
             }
         });
 
         add_inimigosButton.setText("Adicionar");
         add_inimigosButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adicionarIniigo(evt);
+                adicionarInimigoJanela(evt);
             }
         });
 
         rem_inimigosButton.setText("Remover");
         rem_inimigosButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                removerInimigo(evt);
+                removerInimigoButton(evt);
             }
         });
 
@@ -486,7 +486,7 @@ public class JanelaEscudo extends javax.swing.JFrame {
         add_ini_tun_orderButton.setText("Ad. Turn Order");
         add_ini_tun_orderButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AddInimTurnOrder(evt);
+                addInimTurnOrder(evt);
             }
         });
 
@@ -678,10 +678,10 @@ public class JanelaEscudo extends javax.swing.JFrame {
         sorter.sort();
     }
     
-    private void adicionarJogador(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adicionarJogador
+    private void adicionarJogadorJanela(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adicionarJogadorJanela
         jogador = true;
         janela_add_jogadoresFrame.setVisible(true);
-    }//GEN-LAST:event_adicionarJogador
+    }//GEN-LAST:event_adicionarJogadorJanela
 
     private void addPersJanela(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addPersJanela
         File file = (File)personagens_salvosList.getSelectedValue();
@@ -710,20 +710,20 @@ public class JanelaEscudo extends javax.swing.JFrame {
         
     }//GEN-LAST:event_addPersJanela
 
-    private void adicionarIniigo(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adicionarIniigo
+    private void adicionarInimigoJanela(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adicionarInimigoJanela
         jogador = false;
         janela_add_jogadoresFrame.setVisible(true);
-    }//GEN-LAST:event_adicionarIniigo
+    }//GEN-LAST:event_adicionarInimigoJanela
 
-    private void removerJogador(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removerJogador
+    private void removerJogadorButton(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removerJogadorButton
         if(jogadoresModel.getRowCount() != 0)
             jogadoresModel.removeRow(jogadoresTable.getSelectedRow());
-    }//GEN-LAST:event_removerJogador
+    }//GEN-LAST:event_removerJogadorButton
 
-    private void removerInimigo(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removerInimigo
+    private void removerInimigoButton(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removerInimigoButton
         if(inimigosModel.getRowCount() != 0)
             inimigosModel.removeRow(inimigosTable.getSelectedRow());
-    }//GEN-LAST:event_removerInimigo
+    }//GEN-LAST:event_removerInimigoButton
 
     private void addJogTurnOrder(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addJogTurnOrder
         if(jogadoresModel.getRowCount() != 0){
@@ -741,7 +741,7 @@ public class JanelaEscudo extends javax.swing.JFrame {
         }        
     }//GEN-LAST:event_addJogTurnOrder
 
-    private void AddInimTurnOrder(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddInimTurnOrder
+    private void addInimTurnOrder(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addInimTurnOrder
         if(inimigosModel.getRowCount() != 0){
             Personagem per = (Personagem) inimigosModel.getValueAt(inimigosTable.getSelectedRow(), 0);
             Iniciativa ini = new Iniciativa(per.getIniciativa(), per.getNome(), per.getVida() + per.getVidaTemp());
@@ -755,7 +755,7 @@ public class JanelaEscudo extends javax.swing.JFrame {
             );
             ordenaTurnOrder();
         }        
-    }//GEN-LAST:event_AddInimTurnOrder
+    }//GEN-LAST:event_addInimTurnOrder
 
     private void ordenaButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ordenaButtonActionPerformed
         ordenaTurnOrder();

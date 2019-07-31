@@ -588,7 +588,7 @@
         <Property name="text" type="java.lang.String" value="Adicionar"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="adicionarJogador"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="adicionarJogadorJanela"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="rem_jogadoresButton">
@@ -596,7 +596,7 @@
         <Property name="text" type="java.lang.String" value="Remover"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removerJogador"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removerJogadorButton"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="add_inimigosButton">
@@ -604,7 +604,7 @@
         <Property name="text" type="java.lang.String" value="Adicionar"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="adicionarIniigo"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="adicionarInimigoJanela"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="rem_inimigosButton">
@@ -612,7 +612,7 @@
         <Property name="text" type="java.lang.String" value="Remover"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removerInimigo"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removerInimigoButton"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="add_iniciativaButton">
@@ -660,7 +660,7 @@
         <Property name="text" type="java.lang.String" value="Ad. Turn Order"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AddInimTurnOrder"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addInimTurnOrder"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="salvarButton">

@@ -158,7 +158,7 @@ public class JanelaCadastrarPersonagem extends javax.swing.JFrame {
         personagens_salvosList.setModel(filesModel);
         personagens_salvosList.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                personagens_salvosListadicionarPersonagemClick(evt);
+                consultarPersonagemClick(evt);
             }
         });
         jScrollPane7.setViewportView(personagens_salvosList);
@@ -166,14 +166,14 @@ public class JanelaCadastrarPersonagem extends javax.swing.JFrame {
         consultar_perButtonJanela.setText("Consultar");
         consultar_perButtonJanela.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                consultar_perButtonJanelaaddPersJanela(evt);
+                consultarPersonagemButton(evt);
             }
         });
 
         excluirButton.setText("Excluir");
         excluirButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                excluirButtonActionPerformed(evt);
+                excluirPersonagemButton(evt);
             }
         });
 
@@ -457,7 +457,7 @@ public class JanelaCadastrarPersonagem extends javax.swing.JFrame {
         consultarButton.setText("Consultar");
         consultarButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                consultarPersonagem(evt);
+                consultarPersonagemJanela(evt);
             }
         });
 
@@ -929,13 +929,13 @@ public class JanelaCadastrarPersonagem extends javax.swing.JFrame {
         atualizaTotalPontos();
     }//GEN-LAST:event_atualizaModCar
 
-    private void consultarPersonagem(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_consultarPersonagem
+    private void consultarPersonagemJanela(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_consultarPersonagemJanela
         filesModel = new GenericListModel<>(Arquivo.getArquivos(PATH));
         personagens_salvosList.setModel(filesModel);
         janela_consultar_jogadoresFrame.setVisible(true);
-    }//GEN-LAST:event_consultarPersonagem
+    }//GEN-LAST:event_consultarPersonagemJanela
 
-    private void consultar_perButtonJanelaaddPersJanela(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_consultar_perButtonJanelaaddPersJanela
+    private void consultarPersonagemButton(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_consultarPersonagemButton
         File file = (File)personagens_salvosList.getSelectedValue();
         Personagem per;
         try {
@@ -976,9 +976,9 @@ public class JanelaCadastrarPersonagem extends javax.swing.JFrame {
             Logger.getLogger(JanelaEscudo.class.getName()).log(Level.SEVERE, null, ex);
         }
 
-    }//GEN-LAST:event_consultar_perButtonJanelaaddPersJanela
+    }//GEN-LAST:event_consultarPersonagemButton
 
-    private void excluirButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_excluirButtonActionPerformed
+    private void excluirPersonagemButton(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_excluirPersonagemButton
         File file = (File)personagens_salvosList.getSelectedValue();
         try {
             int excluir = JOptionPane.showConfirmDialog(this, "Tem certeza que deseja apagar o personagem PERMANENTEMENTE?", "ATENÇÂO", JOptionPane.WARNING_MESSAGE);
@@ -994,9 +994,9 @@ public class JanelaCadastrarPersonagem extends javax.swing.JFrame {
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }//GEN-LAST:event_excluirButtonActionPerformed
+    }//GEN-LAST:event_excluirPersonagemButton
 
-    private void personagens_salvosListadicionarPersonagemClick(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_personagens_salvosListadicionarPersonagemClick
+    private void consultarPersonagemClick(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_consultarPersonagemClick
         if (evt.getClickCount() == 2 && !evt.isConsumed()) {
             evt.consume();
             File file = (File)personagens_salvosList.getSelectedValue();
@@ -1041,7 +1041,7 @@ public class JanelaCadastrarPersonagem extends javax.swing.JFrame {
                 Logger.getLogger(JanelaEscudo.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
-    }//GEN-LAST:event_personagens_salvosListadicionarPersonagemClick
+    }//GEN-LAST:event_consultarPersonagemClick
 
     /**
      * @param args the command line arguments
