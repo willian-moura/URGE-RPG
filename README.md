@@ -1,7 +1,7 @@
 # URGE RPG
 ## Programa em java para cadastro e gerenciamento de personagens de RPG de mesa (D&D) 
 
-Primeiramente quero deixar registrado que esse é meu primeiro projeto GIT então ainda estou aprendendo a usar a plataforma.
+Primeiramente, quero deixar registrado que esse é meu primeiro projeto GIT então ainda estou aprendendo a usar a plataforma.
 
 Meu objetivo com esse programa é que tanto o mestre quanto os jogadores possam utilizá-lo na hora do jogo.
 Até agora consegui implementar um cadastro básico de personagens além do escudo do mestre, para o mesmo 
