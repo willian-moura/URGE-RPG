@@ -1,5 +1,5 @@
 # URGE RPG
-## Programa em java para cadastro e gerenciamento de personagens de RPG de mesa (D&D) 
+#### Programa em java para cadastro e gerenciamento de personagens de RPG de mesa (D&D) 
 
 Primeiramente, quero deixar registrado que esse é meu primeiro projeto GIT então ainda estou aprendendo a usar a plataforma.
 
@@ -9,13 +9,13 @@ acompanhar HP, CA, Iniciativa entre outras coisas dos personagens do jogo.
 
 Até então só foi feito realmente o básico do básico, mas já consegui utilizá-lo em uma partida.
 
-Funcionalidades atuais:
+**Funcionalidades atuais:**
 - Criar, salvar e alterar um personagem básico
 - Criar, salvar e alterar um escudo de mestre básico, adicionando personagens já criados
 - Escudo com turn order, sendo possível adicionar personagens com suas respectivas iniciativas, além 
 de ser possível criar uma nova iniciativa para uso rápido.
 
-Futuras funcionalidades:
+**Futuras funcionalidades:**
 - Correções de bugs
 - Ver detalhes de personagens direto do escudo do mestre
 - Consulta de bônus das perícias ou testes de resistência dos personagens
@@ -25,3 +25,7 @@ Futuras funcionalidades:
 Realmente esse é apenas um protótipo bem básico que pretendo ir implementando aos poucos, mas fique a vontade
 para implementá-lo também. :) 
 
+## Imagens
+![Tela inicial](/images/tela_inicial.png)
+![Criando personagem](/images/criar_personagem.png)
+![Escudo do mestre](/images/escudo.png)
