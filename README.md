@@ -26,6 +26,5 @@ Realmente esse é apenas um protótipo bem básico que pretendo ir implementando
 para implementá-lo também. :) 
 
 ## Imagens
-![Tela inicial](/images/tela_inicial.png)
 ![Criando personagem](/images/criar_personagem.png)
 ![Escudo do mestre](/images/escudo.png)
