@@ -10,6 +10,6 @@ For now just this following features are available, but they are sufficient to u
 - create, save and update a game details, like history, add created characters (as player or NPC), update HP for players and some more features;
 - atack queue based on the iniciative value of character;
 
-## Imagens
+## Images
 ![Creating character](/images/criar_personagem.png)
 ![Master's game screen](/images/escudo.png)
